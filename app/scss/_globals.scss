@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a, p {
+    font-size: $text;
+    color: color(primary)
+}
+
+.flex{
+    display: flex;
+
+    &__jc-sb {
+        justify-content: space-between;
+    }
+
+    &__jc-c {
+        justify-content: center;
+    }
+    &__ai-c {
+        align-items: center;
+    }
+}

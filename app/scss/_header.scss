@@ -1,0 +1,55 @@
+nav {
+    padding: 85px 125px;
+    
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin: 0 25px;
+
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            transition: ease-in-out .2s;
+
+            &:hover {
+                color: color(accents);
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 0;
+                background-color: color(primary);
+                transition: ease-in-out .2s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+    
+    .nav-socials {
+        a {
+            margin: 0 15px;
+            transition: ease-in-out .2s;
+
+            &:hover {
+                color: color(accents);
+            }
+        }
+
+        .fab {
+            font-size: 1.438rem;
+        }
+    }
+
+    @include tablet {
+        .hide-for-mobile {
+            display: none;
+        }
+    } 
+}
