@@ -1,5 +1,9 @@
 nav {
     padding: 85px 125px;
+
+    @include tablet {
+        padding: 85px 55px;
+    }
     
     ul {
         list-style-type: none;
@@ -46,10 +50,20 @@ nav {
             font-size: 1.438rem;
         }
     }
+    .fa-bars {
+            font-size: 25px;
+        }
 
     @include tablet {
         .hide-for-mobile {
             display: none;
         }
     } 
+
+    @include desktop {
+        .hide-for-desktop {
+            display: none;
+        }
+    }
+    
 }
