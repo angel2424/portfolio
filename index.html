@@ -12,7 +12,15 @@
     <title>Angel Rdz | Front-end Developer</title>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="overlay">
+            <ul class="mobile__nav flex flex__jc-c">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+
         <nav class="flex flex__jc-sb flex__ai-c">
             <img src="img/ardzcodes.svg" alt="Angel Rodriguez codes">
             <ul class="main-nav flex flex__jc-c hide-for-mobile">
@@ -26,8 +34,13 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
-            <span class="mobile hide-for-desktop"><i class="fas fa-bars"></i></span>
+            <a id="btnHamburger" class="hamburger_menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </nav>
     </header>
+    <script src="app/js/script.js"></script>
 </body>
 </html>
