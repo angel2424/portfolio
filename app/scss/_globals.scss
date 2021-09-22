@@ -1,5 +1,8 @@
-html {
+*, *::before, *::after {
     box-sizing: border-box;
+}
+
+html {
     font-size: 100%;
 }
 
@@ -9,7 +12,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-a, p {
+a, p, button {
     font-size: $text;
     color: color(primary)
 }
@@ -28,3 +31,16 @@ a, p {
         align-items: center;
     }
 }
+
+// Button -----------------------------------------------------------
+
+.btn {
+    padding: 10px 56px;
+    text-align: center;
+    font-weight: 700;
+    background-color: color(primary);
+    color: color(secondary);
+    border: solid 3px color(primary);
+    cursor: pointer;
+}
+

@@ -1,0 +1,52 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    margin-top: -227px;
+    width: 100%;
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    >:nth-child(3) {
+        margin-bottom: 45px;
+    }
+    h1,h2 {
+        text-align: center;
+        margin: 2px;
+    }
+
+    h1 {
+        font-size: $mainHeaders;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    a {
+        
+        button {
+            transition: ease-in-out .3s;
+        }
+        
+        &:hover button {
+            background-color: color(secondary);
+            color: color(primary);
+        }
+    }
+
+    &__arrow {
+
+        position: absolute;
+        bottom: 50px;
+
+        .fa-arrow-down{
+            font-size: 1.5rem;
+        }
+    }
+
+}

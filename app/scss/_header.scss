@@ -1,6 +1,6 @@
 header {
     position: relative;
-
+    // Overlay for mobile Menu ----------------------------------------------
     .overlay {
         opacity: 0;
         position: fixed;
@@ -9,6 +9,7 @@ header {
         right: 0;
         bottom: 0;
         background-color: color(secondary);
+        display: none;
 
         .mobile__nav {
 
