@@ -6,10 +6,12 @@
   1% {
     visibility: visible;
     opacity: 0;
+    z-index: 2;
   }
   to {
     visibility: visible;
     opacity: 1;
+    z-index: 2;
   }
 }
 
@@ -21,10 +23,12 @@
   1% {
     visibility: visible;
     opacity: 0;
+    z-index: 2;
   }
   to {
     visibility: visible;
     opacity: 1;
+    z-index: 2;
   }
 }
 
@@ -37,14 +41,17 @@
   from {
     visibility: visible;
     opacity: 1;
+    z-index: 2;
   }
   99% {
     visibility: visible;
     opacity: 0;
+    z-index: -1;
   }
   to {
     visibility: hidden;
     opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -52,20 +59,23 @@
   from {
     visibility: visible;
     opacity: 1;
+    z-index: 2;
   }
   99% {
     visibility: visible;
     opacity: 0;
+    z-index: -1;
   }
   to {
     visibility: hidden;
     opacity: 0;
+    z-index: -1;
   }
 }
 
 .fade-out {
-  -webkit-animation: fade-out 500ms ease-in-out forwards;
-          animation: fade-out 500ms ease-in-out forwards;
+  -webkit-animation: fade-out 400ms ease-in-out forwards;
+          animation: fade-out 400ms ease-in-out forwards;
 }
 
 *, *::before, *::after {
@@ -75,6 +85,8 @@
 
 html {
   font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -129,12 +141,13 @@ header {
 header .overlay {
   opacity: 0;
   position: fixed;
+  height: 100vh;
   top: 114px;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #ffffff;
-  display: none;
+  z-index: -1;
 }
 
 header .overlay .mobile__nav {
@@ -182,6 +195,9 @@ header.open .hamburger_menu > span:last-child {
 
 nav {
   padding: 85px 125px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 1099px) {
@@ -234,7 +250,7 @@ nav .nav-socials a:hover {
 }
 
 nav .nav-socials .fab {
-  font-size: 1.438rem;
+  font-size: 1.5rem;
 }
 
 nav .nav-socials .fab::after {
@@ -284,11 +300,10 @@ nav .hamburger_menu span:not(last-child) {
 }
 
 .hero {
-  position: relative;
-  height: 100vh;
-  margin-top: -227px;
+  height: 74.8vh;
   width: 100%;
   padding: 0 200px;
+  padding-top: 12.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,9 +314,21 @@ nav .hamburger_menu span:not(last-child) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+@media (max-width: 1099px) {
+  .hero {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 8.5vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .hero > :nth-child(3) {
@@ -318,9 +345,22 @@ nav .hamburger_menu span:not(last-child) {
   font-weight: 800;
 }
 
+@media (max-width: 450px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
 .hero h2 {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 450px) {
+  .hero h2 {
+    font-size: 1.375rem;
+    margin: 15px 0 15px 0;
+  }
 }
 
 .hero a button {
@@ -334,8 +374,9 @@ nav .hamburger_menu span:not(last-child) {
 }
 
 .hero__arrow {
+  bottom: 35px;
   position: absolute;
-  bottom: 50px;
+  z-index: 1;
 }
 
 .hero__arrow .fa-arrow-down {

@@ -4,6 +4,8 @@
 
 html {
     font-size: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -13,8 +15,8 @@ body {
 }
 
 a, p, button {
-    font-size: $text;
-    color: color(primary)
+    font-size: font-desk(text);
+    color: color(primary);
 }
 
 .flex{

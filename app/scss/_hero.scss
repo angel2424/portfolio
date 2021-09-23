@@ -1,14 +1,25 @@
 .hero {
-    position: relative;
-    height: 100vh;
-    margin-top: -227px;
+    height: 74.8vh;
     width: 100%;
     padding: 0 200px;
+    // This centers the text according to the viewport not the actual hero element size (THIS PREVENTS THE HERO SECTION FROM GETTING IN THE WAY OF OTHER ELEMENTS)
+    padding-top: 12.5vh;
+    // ------------------------
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
+    @include tablet {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 8.5vh;
+    }
+
+    @include mobile {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
     >:nth-child(3) {
         margin-bottom: 45px;
     }
@@ -18,13 +29,22 @@
     }
 
     h1 {
-        font-size: $mainHeaders;
+        font-size: font-desk(mainHeaders);
         font-weight: 800;
+
+        @include mobile {
+            font-size: font-mobile(MainHeaders);
+        }
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: font-desk(subtitles);
         font-weight: 600;
+
+        @include mobile {
+            font-size: font-mobile(subtitles);
+            margin: 15px 0 15px 0;
+        }
     }
 
     a {
@@ -40,12 +60,11 @@
     }
 
     &__arrow {
-
+        bottom: 35px;
         position: absolute;
-        bottom: 50px;
-
+        z-index: 1;
         .fa-arrow-down{
-            font-size: 1.5rem;
+            font-size: font-desk(icons);
         }
     }
 

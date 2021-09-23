@@ -4,12 +4,13 @@ header {
     .overlay {
         opacity: 0;
         position: fixed;
+        height: 100vh;
         top: 114px;
         left: 0;
         right: 0;
         bottom: 0;
         background-color: color(secondary);
-        display: none;
+        z-index: -1;
 
         .mobile__nav {
 
@@ -62,6 +63,9 @@ header {
 
 nav {
     padding: 85px 125px;
+    background-color: color(secondary);
+    position: relative;
+    z-index: 1;
     // This reduces padding on smaller screens to take advantage of all the limited space
     @include tablet {
         padding: 45px 55px;
@@ -110,7 +114,7 @@ nav {
         }
 
         .fab {
-            font-size: 1.438rem;
+            font-size: font-desk(icons);
 
             &::after {
                 content: '';
