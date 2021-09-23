@@ -22,6 +22,10 @@ header {
             transform: translate(-50%, -65%);
             padding-left: 0;
 
+            @include mobile {
+                top: 40%;
+            }
+
             li {
                 list-style-type: none;
 

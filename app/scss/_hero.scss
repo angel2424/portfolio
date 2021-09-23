@@ -12,12 +12,12 @@
     @include tablet {
         padding-left: 50px;
         padding-right: 50px;
-        padding-top: 1.5vh;
+        justify-content: center;
     }
 
     @include mobile {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 20px;
+        justify-content: center;
     }
     
     >:nth-child(3) {
@@ -68,10 +68,16 @@
         }
 
     }
-
+    //This hides the arrow for short screens that make everything look too close together
     @include mobile {
         .hide {
             display: none;
+        }
+    }
+    //This displays the arrow when the screen's height is larger than 720px -------
+    @include lmobile {
+        .hide {
+            display: block;
         }
     }
 

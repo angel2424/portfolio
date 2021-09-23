@@ -2,6 +2,7 @@ $large-desktop: 1400px;
 $desktop: 1100px;
 $tablet: 1099px;
 $mobile: 450px;
+$long-mobile-height: 720px;
 
 
 @mixin ldesktop {
@@ -24,6 +25,12 @@ $mobile: 450px;
 
 @mixin mobile {
     @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin lmobile {
+    @media (max-width: #{$mobile}) and (min-height: #{$long-mobile-height}) {
         @content;
     }
 }
