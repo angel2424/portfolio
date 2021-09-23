@@ -155,12 +155,6 @@ nav {
         }
     } 
 
-    @include mobile {
-        .hide {
-            display: none;
-        }
-    }
-
     @include desktop {
         .hide-for-desktop {
             display: none;

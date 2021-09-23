@@ -66,6 +66,13 @@
         .fa-arrow-down{
             font-size: font-desk(icons);
         }
+
+    }
+
+    @include mobile {
+        .hide {
+            display: none;
+        }
     }
 
 }
