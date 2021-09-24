@@ -9,8 +9,8 @@
         "../app/scss/_variables.scss",
         "../app/scss/_animations.scss",
         "../app/scss/_globals.scss",
-        "../app/scss/_header.scss",
-        "../app/scss/_hero.scss"
+        "../app/scss/pages/Home/_header.scss",
+        "../app/scss/pages/Home/_hero.scss"
     ],
     "names": [],
     "file": "style.css"
