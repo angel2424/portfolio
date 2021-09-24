@@ -38,12 +38,21 @@ a, p, button {
 // Button -----------------------------------------------------------
 
 .btn {
-    padding: 10px 56px;
-    text-align: center;
-    font-weight: 700;
-    background-color: color(primary);
-    color: color(secondary);
-    border: solid 3px color(primary);
-    cursor: pointer;
+
+    button{
+        padding: 10px 56px;
+        text-align: center;
+        font-weight: 700;
+        background-color: color(primary);
+        color: color(secondary);
+        border: solid 3px color(primary);
+        cursor: pointer; 
+        transition: ease-in-out .3s; 
+    }
+
+    &:hover button{
+        background-color: color(secondary);
+        color: color(primary);
+    }
 }
 

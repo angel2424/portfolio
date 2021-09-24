@@ -47,17 +47,6 @@
         }
     }
 
-    a {
-        
-        button {
-            transition: ease-in-out .3s;
-        }
-        
-        &:hover button {
-            background-color: color(secondary);
-            color: color(primary);
-        }
-    }
 
     &__arrow {
         bottom: 35px;

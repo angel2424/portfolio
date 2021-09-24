@@ -124,7 +124,7 @@ a, p, button {
           align-items: center;
 }
 
-.btn {
+.btn button {
   padding: 10px 56px;
   text-align: center;
   font-weight: 700;
@@ -132,6 +132,13 @@ a, p, button {
   color: #ffffff;
   border: solid 3px #000000;
   cursor: pointer;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.btn:hover button {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 header {
@@ -373,16 +380,6 @@ nav .hamburger_menu span:not(last-child) {
   }
 }
 
-.hero a button {
-  -webkit-transition: ease-in-out .3s;
-  transition: ease-in-out .3s;
-}
-
-.hero a:hover button {
-  background-color: #ffffff;
-  color: #000000;
-}
-
 .hero__arrow {
   bottom: 35px;
   position: absolute;
@@ -403,5 +400,78 @@ nav .hamburger_menu span:not(last-child) {
   .hero .hide {
     display: block;
   }
+}
+
+.work {
+  width: 100%;
+  padding: 80px 125px;
+}
+
+.work h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 80px;
+}
+
+.work .work-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
+  row-gap: 50px;
+  justify-items: center;
+  margin-bottom: 80px;
+}
+
+.work .work-img .img-container {
+  position: relative;
+}
+
+.work .work-img .img-container img {
+  width: 500px;
+  border: 3px solid #000000;
+}
+
+.work .work-img .img-container .img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  padding: 15px;
+}
+
+.work .work-img .img-container .img-overlay h3 {
+  text-align: center;
+  margin: 5px;
+}
+
+.work .work-img .img-container .img-overlay p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.work .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
