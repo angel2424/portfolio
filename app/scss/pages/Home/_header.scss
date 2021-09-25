@@ -152,17 +152,5 @@ nav {
         }
 
     }
-    // This hides the menus for either mobile or desktop ------------------------------------------------------
-    @include tablet {
-        .hide-for-mobile {
-            display: none;
-        }
-    } 
-
-    @include desktop {
-        .hide-for-desktop {
-            display: none;
-        }
-    }
     
 }

@@ -6,6 +6,7 @@ html {
     font-size: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -46,8 +47,7 @@ a, p, button {
         background-color: color(primary);
         color: color(secondary);
         border: solid 3px color(primary);
-        cursor: pointer; 
-        transition: ease-in-out .3s; 
+        cursor: pointer;  
     }
 
     &:hover button{
@@ -56,3 +56,15 @@ a, p, button {
     }
 }
 
+// This hides the menus for either mobile or desktop ------------------------------------------------------
+@include tablet {
+    .hide-for-mobile {
+        display: none;
+    }
+} 
+
+@include desktop {
+    .hide-for-desktop {
+        display: none;
+    }
+}

@@ -2,6 +2,10 @@
     width: 100%;
     padding: 80px 125px;
 
+    @include tablet {
+        padding: 80px 55px 0px 55px;
+    }
+
     h2 {
         text-align: center;
         font-size: font-desk(headers);
@@ -10,16 +14,26 @@
 
     .work-img {
         display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-        row-gap: 50px;
-        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        row-gap: 40px;
+        column-gap: 20px;
+        justify-content: center;
         margin-bottom: 80px;
+        
+        @include mobile {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
 
         .img-container{
             position: relative;
             img{
-                width: 500px;
+                width: 100%;
                 border: 3px solid color(primary);
+            }
+
+            &:hover .img-overlay {
+                visibility: visible;
+                opacity: .95;
             }
 
             .img-overlay {
@@ -35,15 +49,28 @@
                 background-color: color(secondary);
                 border: 3px solid color(primary);
                 padding: 15px;
+                visibility: hidden;
+                opacity: 0;
+                transition: ease-in-out .3s;
+
+                @include tablet {
+                    position: static;
+                    opacity: 1;
+                    visibility: visible;
+                    border: none;
+                    margin: 20px;
+                }
 
                 h3 {
                     text-align: center;
-                    margin: 5px;
+                    margin: 2px;
                 }
 
                 p {
                     text-align: center;
-                    margin-bottom: 10px;
+                }
+                .btn {
+                   
                 }
             }
         }
