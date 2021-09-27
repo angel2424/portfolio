@@ -16,18 +16,18 @@
         <header class="header" id="top">
             <div class="overlay">
                 <ul class="mobile__nav flex flex__jc-c">
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about" id="about-mobile">About</a></li>
                     <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#contact" id="contact-mobile">Contact Me</a></li>
                 </ul>
             </div>
 
             <nav class="flex flex__jc-sb flex__ai-c">
                 <img src="img/ardzcodes.svg" alt="Angel Rodriguez codes">
                 <ul class="main-nav flex flex__jc-c hide-for-mobile">
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
                 <div class="nav-socials hide-for-mobile">
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -46,7 +46,7 @@
         <!--///////////////////////////////// HERO SECTION /////////////////////////////////-->
 
         <section class="hero">
-            <h2>Hello World! I'm Angel 👋</h2>
+            <h2>Hello World! I'm Angel <span class="hand">👋</span></h2>
             <h1>Front-end Web Developer</h1>
             <h2>Based in Piedras Negras, Coahuila, Mexico </h2>
             <a class="btn" href="#"><button type="button">Connect with me</button></a>
@@ -61,9 +61,17 @@
                 <div class="img-container">
                     <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
                     <div class="img-overlay">
-                        <h3>Project Name</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                        <a class="btn" href="#"><button type="button">View More</button></a>
+                        <h3>CSS Phone Illustration</h3>
+                        <p>Phone Mockup designed with pure HTML and CSS</p>
+                        <a class="btn" href="#"><button type="button">View Full Details</button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="img/insure_landing.jpg" alt="Phone Mockup CSS">
+                    <div class="img-overlay">
+                        <h3>Insure Landing Page</h3>
+                        <p>Built with HTML, CSS and JavaScript</p>
+                        <a class="btn" href="#"><button type="button">View Full Details</button></a>
                     </div>
                 </div>
                 <div class="img-container">
@@ -71,39 +79,31 @@
                     <div class="img-overlay">
                         <h3>Project Name</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                        <a class="btn" href="#"><button type="button">View More</button></a>
+                        <a class="btn" href="#"><button type="button">View Full Details</button></a>
                     </div>
                 </div>
                 <div class="img-container">
-                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <img src="img/order_summary.jpg" alt="Phone Mockup CSS">
                     <div class="img-overlay">
-                        <h3>Project Name</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                        <a class="btn" href="#"><button type="button">View More</button></a>
+                        <h3>Order Summary Card</h3>
+                        <p>Built with pure HTML and CSS.</p>
+                        <a class="btn" href="#"><button type="button">View Full Details</button></a>
                     </div>
                 </div>
                 <div class="img-container">
-                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <img src="img/stats.jpg" alt="Phone Mockup CSS">
                     <div class="img-overlay">
-                        <h3>Project Name</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                        <a class="btn" href="#"><button type="button">View More</button></a>
+                        <h3>Stats Card</h3>
+                        <p>Built with pure HTML and CSS </p>
+                        <a class="btn" href="#"><button type="button">View Full Details</button></a>
                     </div>
                 </div>
                 <div class="img-container">
-                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <img src="img/social_proof.jpg" alt="Phone Mockup CSS">
                     <div class="img-overlay">
-                        <h3>Project Name</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                        <a class="btn" href="#"><button type="button">View More</button></a>
-                    </div>
-                </div>
-                <div class="img-container">
-                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
-                    <div class="img-overlay">
-                        <h3>Project Name</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                        <a class="btn" href="#"><button type="button">View More</button></a>
+                        <h3>Social Proof Section</h3>
+                        <p>Built with HTML and CSS with Flexbox</p>
+                        <a class="btn" href="#"><button type="button">View Full Details</button></a>
                     </div>
                 </div>
             </div>
@@ -114,12 +114,18 @@
 
         <!--///////////////////////////////// ABOUT ME SECTION /////////////////////////////////-->
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__text">
                 <h2>About Me</h2>
-                <p>My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. 
+                <p>Hi, I’m Angel Rodriguez. I’m a Front-end web Developer from the beautiful country of Mexico.
                 </p>
-                <p>My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. </p>
+                <p>I love building websites and sometimes even designing them. I started my journey as a Web developer in 2020. Before going to college I didn’t know what career to choose, but I knew I wanted to work in the technology side of the industry. Through researching and cosidering studying graphic design, I ran into an article about Web Development and I started looking more into it and I started loving every bit about it, from building websites with HTML and CSS to adding interactivity with JavaScript and learning about how the web works. 
+                <br>
+                I am currently looking for my first job as a Front-end Developer to grow my experience in a company where I can learn more and get to know people who love programming as well.
+                </p>
+                <p>
+                You can see the languages and skills I currently work with below.
+                </p>
             </div>
             <img src="img/34C0DA93-B0E1-4A38-8FED-B40AC3487E8B.jpg" alt="Angel Rodriguez Portrait">
         </section>
@@ -151,7 +157,7 @@
 
         <!--///////////////////////////////// ABOUT ME SECTION /////////////////////////////////-->
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contact Me</h2>
             <p>If you liked what you see here, send me an email and let’s work together in your next project!</p>
             <h3><a href="mailto: angel01rdz@outlook.com" target="_blank">angel01rdz@outlook.com</a></h3>
