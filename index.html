@@ -1,117 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Angel Rdz | Front-end Developer</title>
-</head>
-<body>
-    <header class="header">
-        <div class="overlay">
-            <ul class="mobile__nav flex flex__jc-c">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Angel Rdz | Front-end Developer</title>
+    </head>
+    <body>
+        <header class="header" id="top">
+            <div class="overlay">
+                <ul class="mobile__nav flex flex__jc-c">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
 
-        <nav class="flex flex__jc-sb flex__ai-c">
-            <img src="img/ardzcodes.svg" alt="Angel Rodriguez codes">
-            <ul class="main-nav flex flex__jc-c hide-for-mobile">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-            <div class="nav-socials hide-for-mobile">
+            <nav class="flex flex__jc-sb flex__ai-c">
+                <img src="img/ardzcodes.svg" alt="Angel Rodriguez codes">
+                <ul class="main-nav flex flex__jc-c hide-for-mobile">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+                <div class="nav-socials hide-for-mobile">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <a id="btnHamburger" class="hamburger_menu hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+        </header>
+
+        <!--///////////////////////////////// HERO SECTION /////////////////////////////////-->
+
+        <section class="hero">
+            <h2>Hello World! I'm Angel 👋</h2>
+            <h1>Front-end Web Developer</h1>
+            <h2>Based in Piedras Negras, Coahuila, Mexico </h2>
+            <a class="btn" href="#"><button type="button">Connect with me</button></a>
+            <a class="hero__arrow hide" href="#"><i class="fas fa-arrow-down"></i></a>
+        </section>
+
+        <!--///////////////////////////////// WORK SECTION /////////////////////////////////-->
+
+        <section class="work">
+            <h2>Work</h2>
+            <div class="work-img">
+                <div class="img-container">
+                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <div class="img-overlay">
+                        <h3>Project Name</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
+                        <a class="btn" href="#"><button type="button">View More</button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <div class="img-overlay">
+                        <h3>Project Name</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
+                        <a class="btn" href="#"><button type="button">View More</button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <div class="img-overlay">
+                        <h3>Project Name</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
+                        <a class="btn" href="#"><button type="button">View More</button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <div class="img-overlay">
+                        <h3>Project Name</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
+                        <a class="btn" href="#"><button type="button">View More</button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <div class="img-overlay">
+                        <h3>Project Name</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
+                        <a class="btn" href="#"><button type="button">View More</button></a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
+                    <div class="img-overlay">
+                        <h3>Project Name</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
+                        <a class="btn" href="#"><button type="button">View More</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <a class="btn hide-for-mobile" href="#"><button type="button">View More</button></a> 
+            </div>
+        </section>
+
+        <!--///////////////////////////////// ABOUT ME SECTION /////////////////////////////////-->
+
+        <section class="about">
+            <div class="about__text">
+                <h2>About Me</h2>
+                <p>My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. 
+                </p>
+                <p>My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. My name is Angel Rafael Rodriguez Hernandez. I’m a front end developer from a small city on the border between Mexico and the United States known as Piedras Negras. </p>
+            </div>
+            <img src="img/34C0DA93-B0E1-4A38-8FED-B40AC3487E8B.jpg" alt="Angel Rodriguez Portrait">
+        </section>
+        <section class="skills">
+            <h1>Skills</h1>
+            <div class="skills__list">
+                <div>
+                    <i class="fab fa-html5"></i>
+                    <h4>HTML</h4>
+                </div>
+                <div>
+                    <i class="fab fa-css3-alt"></i>
+                    <h4>CSS</h4>
+                </div>
+                <div>
+                    <i class="fab fa-js"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div>
+                    <i class="fab fa-sass"></i>
+                    <h4>Sass</h4>
+                </div>
+                <div>
+                    <i class="fab fa-github"></i>
+                    <h4>Git and Github</h4>
+                </div>
+            </div>
+        </section>
+
+        <!--///////////////////////////////// ABOUT ME SECTION /////////////////////////////////-->
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you liked what you see here, send me an email and let’s work together in your next project!</p>
+            <h3><a href="mailto: angel01rdz@outlook.com" target="_blank">angel01rdz@outlook.com</a></h3>
+            <div class="contact__socials">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
-            <a id="btnHamburger" class="hamburger_menu hide-for-desktop">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </nav>
-    </header>
-
-    <!--///////////////////////////////// HERO SECTION /////////////////////////////////-->
-
-    <section class="hero">
-        <h2>Hello World! I'm Angel 👋</h2>
-        <h1>Front-end Web Developer</h1>
-        <h2>Based in Piedras Negras, Coahuila, Mexico </h2>
-        <a class="btn" href="#"><button type="button">Connect with me</button></a>
-        <a class="hero__arrow hide" href="#"><i class="fas fa-arrow-down"></i></a>
-    </section>
-
-    <!--///////////////////////////////// WORK SECTION /////////////////////////////////-->
-
-    <section class="work">
-        <h2>Work</h2>
-        <div class="work-img">
-            <div class="img-container">
-                <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
-                <div class="img-overlay">
-                    <h3>Project Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                    <a class="btn" href="#"><button type="button">View More</button></a>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
-                <div class="img-overlay">
-                    <h3>Project Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                    <a class="btn" href="#"><button type="button">View More</button></a>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
-                <div class="img-overlay">
-                    <h3>Project Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                    <a class="btn" href="#"><button type="button">View More</button></a>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
-                <div class="img-overlay">
-                    <h3>Project Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                    <a class="btn" href="#"><button type="button">View More</button></a>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
-                <div class="img-overlay">
-                    <h3>Project Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                    <a class="btn" href="#"><button type="button">View More</button></a>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="img/desktop-design.jpg" alt="Phone Mockup CSS">
-                <div class="img-overlay">
-                    <h3>Project Name</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor voluptas nesciunt, consequatur nisi quos fuga obcaecati.</p>
-                    <a class="btn" href="#"><button type="button">View More</button></a>
-                </div>
-            </div>
+        </section>
+        <div class="to_top">
+            <a href="#top"><i class="fas fa-arrow-up"></i>Back to Top</a>
         </div>
-        <div class="button">
-            <a class="btn hide-for-mobile" href="#"><button type="button">View More</button></a> 
-        </div>
-    </section>
 
-    <script src="app/js/script.js"></script>
-</body>
+        <footer>
+            <h2>Designed and Developed by Angel Rodriguez - <a href="https://www.instagram.com/a.rdzcodes24/">@ardzcodes</a></h2>
+        </footer>
+        <script src="app/js/script.js"></script>
+    </body>
 </html>

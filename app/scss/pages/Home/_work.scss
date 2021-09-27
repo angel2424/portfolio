@@ -4,6 +4,7 @@
 
     @include tablet {
         padding: 80px 55px 0px 55px;
+        margin-top: 55px;
     }
 
     h2 {
@@ -68,9 +69,6 @@
 
                 p {
                     text-align: center;
-                }
-                .btn {
-                   
                 }
             }
         }

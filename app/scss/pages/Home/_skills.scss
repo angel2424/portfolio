@@ -1,0 +1,41 @@
+.skills {
+    padding: 90px 125px;
+
+    @include tablet {
+        padding: 40px 125px;
+    }
+
+    @include mobile {
+        padding: 40px 55px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: font-desk(headers);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        div {
+            margin: 35px 50px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+
+            .fab {
+                font-size: 95px;
+                text-align: center;
+            }
+
+            h4{
+                text-align: center;
+                font-size: font-desk(subtitles);
+                color: color(accents);
+            }
+        }
+    }
+}

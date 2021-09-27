@@ -1,0 +1,59 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 125px;
+    position: relative;
+
+    @include tablet {
+        flex-direction: column-reverse;
+        padding: 50px 55px;
+    }
+
+
+    &__text {
+        padding-right: 150px;
+
+        @include ldesktop {
+            padding-right: 320px;
+        }
+
+        @include tablet {
+            padding: 0;
+            text-align: justify;
+        }
+
+        h2 {
+            font-size: font-desk(headers);
+            
+            @include tablet {
+                text-align: center;
+            }
+        }
+
+        p{
+            font-size: font-desk(text);
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+
+    img {
+        width: 25vw;
+        border: color(primary) solid 3px;
+
+        @include ldesktop {
+            width: 22vw;
+        }
+
+        @include tablet {
+            width: 55vw;
+            bottom: 00px;
+        }
+
+        @include mobile {
+            width: 85vw;
+        }
+    }
+
+}

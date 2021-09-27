@@ -54,6 +54,10 @@
         z-index: 1;
         .fa-arrow-down{
             font-size: font-desk(icons);
+
+            &:hover {
+                color: color(accents);
+            }
         }
 
     }

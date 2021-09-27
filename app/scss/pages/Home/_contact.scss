@@ -1,0 +1,81 @@
+.contact {
+    padding: 90px 125px;
+    margin-bottom: 125px;
+
+    @include tablet {
+        padding: 0px 125px;
+    }
+
+    @include mobile {
+        padding: 0px 35px;
+    }
+
+    h2 {
+        font-size: font-desk(mainHeaders);
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 5px;
+
+        @include mobile {
+            font-size: font-mobile(mainHeaders);
+        }
+    }
+
+    p {
+        font-weight: 700;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 30px;
+        font-weight: 500;
+
+        @include mobile {
+            margin: 0;
+        }
+
+        a {
+            font-size: font-desk(subtitles);
+            color: color(accents);
+            transition: ease-in-out .3s;
+
+            &:hover {
+                color: color(primary);
+            }
+        }
+
+    }
+
+    &__socials {
+        margin-top: 40px;
+        text-align: center;
+        
+        a {
+            margin: 20px;
+            transition: ease-in-out .3s;
+
+            &:hover {
+                color: color(accents);
+            }
+        }
+
+        .fab {
+            font-size: font-desk(subtitles);
+
+            &::after {
+                content: '';
+                display: block;
+                height: 3px;
+                margin-top: 5px;
+                width: 0;
+                background-color: color(primary);
+                transition: ease-in-out .3s;
+            }
+    
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
