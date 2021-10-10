@@ -46,15 +46,24 @@ tl.from('.intro', {y: '0%', duration: 1.5,}, '-=.5')
 
 //Hero -----
 tl.from('.main-nav li, .logo, .nav-socials', {opacity: 0, duration: 2.5}, '-=1');
-tl.to('.hide', {opacity: 1, duration: 2.5}, '-=3.5');
+tl.from('.hide_title', {opacity: 0, duration: 2.5}, '-=3.5');
 tl.from('.hero .btn', {opacity: 0, duration: 1.5}, '-=3.5');
 
-const stTl = gsap.timeline({
+let stTl = gsap.timeline({
     scrollTrigger: {
         trigger: '.work',
         start: 'center bottom'
     }
 });
+
+if (window.innerWidth < 700) {
+   stTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.work',
+            start: 'top top'
+        }
+    });
+}
 
 stTl.from('.work_h2', {y: 300, opacity: 0, duration: 1.5});
 stTl.from('.img-container', {x: '-100%', opacity: 0, duration: 1, stagger: 0.25}, '-=1')

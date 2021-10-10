@@ -330,9 +330,9 @@ nav {
   z-index: 1;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 450px) {
   nav {
-    padding: 45px 55px;
+    padding: 45px 25px;
   }
 }
 
@@ -524,10 +524,6 @@ nav .hamburger_menu span:not(last-child) {
   }
 }
 
-.hero_titles .hide {
-  opacity: 0;
-}
-
 .intro {
   position: fixed;
   background-color: #fff;
@@ -548,6 +544,13 @@ nav .hamburger_menu span:not(last-child) {
           transform: translate(-50%, -50%);
   -webkit-animation: fill 1.5s ease forwards 1.5s;
           animation: fill 1.5s ease forwards 1.5s;
+}
+
+@media (max-width: 450px) {
+  .intro #logo {
+    width: 300px;
+    height: auto;
+  }
 }
 
 .intro #logo path:nth-child(1) {
@@ -924,7 +927,7 @@ nav .hamburger_menu span:not(last-child) {
 
 @media (max-width: 450px) {
   .contact h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 }
 

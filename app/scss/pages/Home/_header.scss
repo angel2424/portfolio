@@ -72,9 +72,12 @@ nav {
     z-index: 1;
     // This reduces padding on smaller screens to take advantage of all the limited space
     
+    @include mobile {
+        padding: 45px 25px;
+    }
 
     @include tablet {
-        padding: 45px 55px;
+        
     }
     
     @include shortDesktop {

@@ -8,12 +8,18 @@
     z-index: 3;
     transform: translateY(-100%);
 
+
     #logo {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         animation: fill 1.5s ease forwards 1.5s;
+
+        @include mobile {
+            width: 300px;
+            height: auto;
+        }
 
         path:nth-child(1) {
             stroke-dasharray: 457px;
@@ -62,7 +68,6 @@
         }
 
     }
-
 }
 
 @keyframes line-anim {
