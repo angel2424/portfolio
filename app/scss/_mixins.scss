@@ -17,6 +17,12 @@ $long-mobile-height: 720px;
     }
 }
 
+@mixin shortDesktop {
+    @media (min-width: #{$desktop}) and (max-height: 700px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width: #{$tablet}) {
         @content;

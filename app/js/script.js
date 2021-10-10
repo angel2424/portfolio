@@ -35,3 +35,28 @@ contact.addEventListener('click', function(){
         overlay.classList.add('fade-out');
     }
 });
+
+const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
+
+//intro
+
+tl.to('#logo', {opacity: 0, duration: .5, delay: 3})
+tl.from('.intro', {y: '0%', duration: 1.5,}, '-=.5')
+
+
+//Hero -----
+tl.from('.main-nav li, .logo, .nav-socials', {opacity: 0, duration: 2.5}, '-=1');
+tl.to('.hide', {opacity: 1, duration: 2.5}, '-=3.5');
+tl.from('.hero .btn', {opacity: 0, duration: 1.5}, '-=3.5');
+
+const stTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.work',
+        start: 'center bottom'
+    }
+});
+
+stTl.from('.work_h2', {y: 300, opacity: 0, duration: 1.5});
+stTl.from('.img-container', {x: '-100%', opacity: 0, duration: 1, stagger: 0.25}, '-=1')
+stTl.from('.work .button', {opacity: 0, duration: 1.5}, '-=1');
+

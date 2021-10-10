@@ -22,7 +22,7 @@ header {
             transform: translate(-50%, -65%);
             padding-left: 0;
 
-            @include mobile {
+            @include tablet {
                 top: 40%;
             }
 
@@ -71,10 +71,16 @@ nav {
     position: relative;
     z-index: 1;
     // This reduces padding on smaller screens to take advantage of all the limited space
+    
+
     @include tablet {
         padding: 45px 55px;
     }
     
+    @include shortDesktop {
+        padding: 55px 125px;
+    }
+
     ul {
         list-style-type: none;
     }
