@@ -71,7 +71,7 @@ nav {
     position: relative;
     z-index: 1;
     // This reduces padding on smaller screens to take advantage of all the limited space
-    
+
     @include mobile {
         padding: 45px 25px;
     }
@@ -84,7 +84,7 @@ nav {
         padding: 55px 125px;
     }
 
-    ul {
+    .main-nav, .nav_work {
         list-style-type: none;
     }
 

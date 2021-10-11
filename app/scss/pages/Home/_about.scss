@@ -1,45 +1,116 @@
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 90px 125px;
     position: relative;
 
     @include tablet {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 50px 55px;
+    }
+
+    @include mobile {
+        padding: 50px 25px;
     }
 
 
     &__text {
-        padding-right: 150px;
-
-        @include ldesktop {
-            padding-right: 320px;
-        }
 
         @include tablet {
             padding: 0;
             text-align: justify;
         }
+        
+        .title_text {
+            position: relative;
+            margin-bottom: 75px;
+            margin-left: 75px;
+
+            @include desktop {
+                margin-bottom: 20px;
+            }
+
+            @include tablet {
+                margin-bottom: 50px;
+                margin-left: 20px;
+            }
+
+            &::before {
+                content: "";
+                display: flex;
+                position: absolute;
+                bottom: -10px;
+                left: -20px;
+                width: 6px;
+                height: 100px;
+                background-color: #000;
+
+                @include mobile {
+                    height: 125px;
+                }
+            }
+        }
 
         h2 {
             font-size: font-desk(headers);
+            margin: 0;
+            line-height: 20px;
+            padding: 10px;
+            margin-left: -10px;
             
+            //styles to hide titles for animation
+            background-color: #fff;
+            overflow: hidden;
+
             @include tablet {
-                text-align: center;
+                text-align: left;
             }
+
+            @include mobile {
+                font-size: font-mobile(headers);
+            }
+        }
+
+        h3 {
+            font-size: font-desk(subtitles);
+            font-weight: 500;
+
+            //styles to hide titles for animation
+            background-color: #fff;
+            overflow: hidden;
+
+            @include mobile {
+                font-size: font-mobile(subtitles);
+            }
+        }
+
+        //styles to hide titles for animation
+        .ab_title_hide {
+            transform: translateX(-110%);
+            display: inline-block;
         }
 
         p{
             font-size: font-desk(text);
             font-weight: 500;
             line-height: 28px;
+            margin-left: 250px;
+
+            @include desktop {
+                margin-left: 55px;
+            }
+
+            @include tablet {
+                margin-left: 0;
+            }
+
+            @include mobile {
+                line-height: 25px;
+            }
         }
     }
 
     img {
         width: 25vw;
+        height: 550px;
         border: color(primary) solid 3px;
 
         @include ldesktop {
@@ -48,11 +119,15 @@
 
         @include tablet {
             width: 55vw;
-            bottom: 00px;
+            margin-bottom: 120px;
+            object-fit: cover;
         }
 
         @include mobile {
             width: 85vw;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 80px;
         }
     }
 

@@ -1,0 +1,36 @@
+.work_title_text {
+    text-align: center;
+    padding: 10px 125px;
+
+    h2 {
+        font-size: font-desk(mainHeaders);
+        font-weight: 800;
+    }
+
+    h4 {
+        font-size: font-desk(subtitles);
+        font-weight: 600;
+        margin: 0 350px;
+    }
+
+    h3 {
+        text-align: center;
+        margin: 30px;
+        font-weight: 500;
+
+        @include mobile {
+            margin: 0;
+        }
+
+        a {
+            font-size: font-desk(subtitles);
+            color: color(accents);
+            transition: ease-in-out .3s;
+
+            &:hover {
+                color: color(primary);
+            }
+        }
+
+    }
+}

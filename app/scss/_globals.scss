@@ -74,6 +74,12 @@ a, p, button {
     }
 }
 
+@include ldesktop {
+    .hide-for-desktop {
+        display: none;
+    }
+}
+
 // Back to top button ------------------------------------------------------
 
 .to_top {

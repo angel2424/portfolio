@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>ardzcodes | Front-end Developer</title>
+    </head>
+    <body>
+        <header class="header" id="top">
+            <div class="overlay">
+                <ul class="mobile__nav flex flex__jc-c">
+                    <li><a href="#about" id="about-mobile">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#contact" id="contact-mobile">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <nav class="flex flex__jc-sb flex__ai-c">
+                <a href="index.html"><img class="logo" src="img/ardzcodes.svg" alt="Angel Rodriguez codes"></a>
+                <ul class="main-nav nav_work flex flex__jc-c hide-for-mobile">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="index.html#contact">Contact Me</a></li>
+                </ul>
+                <div class="nav-socials hide-for-mobile">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <a id="btnHamburger" class="hamburger_menu hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+        </header>
+
+        <!--///////////////////////////////// WORK TITLE TEXT SECTION /////////////////////////////////-->
+
+        <section class="work_title_text">
+            <h2>My Work</h2>
+            <h4>Welcome! Here you can view all my projects from personal to more professional work. If you want to know even more about me or my projects feel free to contact me through my email:</h4>
+            <h3><a href="mailto: angel01rdz@outlook.com" target="_blank">angel01rdz@outlook.com</a></h3>
+        </section>
+
+        <!--///////////////////////////////// CONTACT SECTION /////////////////////////////////-->
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>If you liked what you see here, send me an email and let’s work together in your next project!</p>
+            <h3><a href="mailto: angel01rdz@outlook.com" target="_blank">angel01rdz@outlook.com</a></h3>
+            <div class="contact__socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <div class="to_top">
+            <a href="#top"><i class="fas fa-arrow-up"></i>Back to Top</a>
+        </div>
+
+        <footer>
+            <h2>Designed and Developed by Angel Rodriguez - <a href="https://www.instagram.com/a.rdzcodes24/" target="_blank">@ardzcodes</a></h2>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+        <script src="app/js/script.js"></script>
+    </body>
+</html>
