@@ -83,7 +83,9 @@ a, p, button {
 // Back to top button ------------------------------------------------------
 
 .to_top {
+    position: relative;
     padding: 30px 62.5px;
+    z-index: 4;
 
     @include tablet {
         text-align: center;
@@ -108,9 +110,11 @@ a, p, button {
 // Footer ------------------------------------------------------
 
 footer {
+    position: relative;
     text-align: center;
     font-size: .7rem;
     color: color(accents);
+    z-index: 4;
 
     h2 {
        font-weight: 400; 

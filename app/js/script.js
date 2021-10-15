@@ -1,8 +1,12 @@
 const btnHamburger = document.querySelector('#btnHamburger');
 const header = document.querySelector('.header');
+const nav = document.querySelector('nav');
 const overlay = document.querySelector('.overlay');
-
+const body = document.querySelector('body');
 const about = document.querySelector('#about-mobile');
+const img = document.querySelectorAll('.project_container img');
+const imgTags = document.querySelectorAll('.img_tag');
+const imgTag = document.querySelector('.img_tag');
 const contact = document.querySelector('#contact-mobile');
 
 btnHamburger.addEventListener('click', function(){
@@ -36,24 +40,50 @@ contact.addEventListener('click', function(){
     }
 });
 
+imgTags.forEach(tag => {
+    tag.addEventListener('mouseover', () => {
+        tag.previousElementSibling.style.opacity = .8;
+        tag.style.textDecoration = 'underline';
+    })
+    tag.addEventListener('mouseout', () => {
+        tag.previousElementSibling.style.opacity = 1;
+        tag.style.textDecoration = 'none';
+    })
+});
+img.forEach(image => {
+    image.addEventListener('mouseover', () => {
+        image.parentElement.nextElementSibling.style.textDecoration = 'underline';
+    })
+    image.addEventListener('mouseout', () => {
+        image.parentElement.nextElementSibling.style.textDecoration = 'none';
+    })
+});
+
+window.addEventListener('scroll', () => {
+    if(window.innerWidth > 700) {
+        nav.classList.toggle('scrolling', window.scrollY > 0);
+    }
+})
+
 //////////// GSAP ANIMATIONS ////////////
 
         //// HOME PAGE ////
 
 /////////   Intro section animations
 
+
 const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
 
-tl.to('#logo', {opacity: 0, duration: .5, delay: 3})
-tl.from('.intro', {y: '0%', duration: 1.5,}, '-=.5')
+if(document.querySelector('.intro')) {
 
+    tl.to('#logo', {opacity: 0, duration: .5, delay: 3})
+    tl.from('.intro', {y: '0%', duration: 1.5,}, '-=.5')
+}
 
 /////////   Hero section animations
-
 tl.from('.main-nav li, .logo, .nav-socials', {opacity: 0, duration: 2.5}, '-=1');
 tl.from('.hide_title', {opacity: 0, duration: 2.5}, '-=3.5');
 tl.from('.hero .btn', {opacity: 0, duration: 1.5}, '-=3.5');
-
 
 /////////   Work section animations
 
@@ -65,7 +95,7 @@ let stTl = gsap.timeline({
 });
 
 if (window.innerWidth < 700) {
-   stTl = gsap.timeline({
+stTl = gsap.timeline({
         scrollTrigger: {
             trigger: '.work',
             start: 'top center'
@@ -110,7 +140,7 @@ let stSkills = gsap.timeline({
 });
 
 if (window.innerWidth < 700) {
-   stSkills = gsap.timeline({
+stSkills = gsap.timeline({
         scrollTrigger: {
             trigger: '.skills',
             start: 'top center'
@@ -137,7 +167,7 @@ stContact.from('.contact', {opacity: 0, duration: 1});
 let stFooter = gsap.timeline({
     scrollTrigger: {
         trigger: '.to_top',
-        start: 'center bottom'
+        start: 'top bottom'
     }
 });
 
@@ -146,3 +176,4 @@ stFooter.from('.to_top, footer', {opacity: 0, duration: 1})
         //// WORK PAGE ////
 
 /////////   nav section animations
+

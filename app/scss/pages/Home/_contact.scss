@@ -1,6 +1,8 @@
 .contact {
+    position: relative;
     padding: 90px 125px;
     margin-bottom: 125px;
+    z-index: 4;
 
     @include tablet {
         padding: 0px 125px;

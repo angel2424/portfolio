@@ -10,49 +10,79 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>ardzcodes | Front-end Developer</title>
+        <title>ardzcodes | Front-end developer</title>
     </head>
     <body>
+        
         <header class="header" id="top">
             <div class="overlay">
                 <ul class="mobile__nav flex flex__jc-c">
                     <li><a href="#about" id="about-mobile">About</a></li>
-                    <li><a href="#">Work</a></li>
+                    <li><a href="work.html">Work</a></li>
                     <li><a href="#contact" id="contact-mobile">Contact Me</a></li>
                 </ul>
             </div>
-
-            <nav class="flex flex__jc-sb flex__ai-c">
-                <a href="index.html"><img class="logo" src="img/ardzcodes.svg" alt="Angel Rodriguez codes"></a>
-                <ul class="main-nav nav_work flex flex__jc-c hide-for-mobile">
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="index.html#contact">Contact Me</a></li>
-                </ul>
-                <div class="nav-socials hide-for-mobile">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-                <a id="btnHamburger" class="hamburger_menu hide-for-desktop">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-            </nav>
         </header>
+        <nav class="flex flex__jc-sb flex__ai-c">
+            <a class="logo" href="index.html"><img src="img/ardzcodes.svg" alt="Angel Rodriguez codes"></a>
+            <ul class="main-nav flex flex__jc-c hide-for-mobile">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="nav-socials hide-for-mobile">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <a id="btnHamburger" class="hamburger_menu hide-for-desktop">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </nav>
 
-        <!--///////////////////////////////// WORK TITLE TEXT SECTION /////////////////////////////////-->
+        <div class="intro">
+            <div class="intro_text flex flex__ai-c flex__jc-c">
+                <svg id='logo' width="754" height="112" viewBox="0 0 754 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.848 31.088C24.464 31.088 12.512 34.256 4.304 40.592L11.36 53.696C17.12 48.944 26.048 46.064 34.688 46.064C47.504 46.064 53.84 52.256 53.84 62.768V63.92H33.968C10.64 63.92 2 74 2 86.816C2 100.208 13.088 109.856 30.656 109.856C42.176 109.856 50.528 106.112 54.848 99.488V108.848H71.84V63.776C71.84 41.6 59.024 31.088 36.848 31.088ZM34.4 96.752C25.184 96.752 19.712 92.576 19.712 86.096C19.712 80.48 23.024 75.872 35.264 75.872H53.84V84.8C50.816 92.72 43.184 96.752 34.4 96.752Z" stroke="black" stroke-width="4"/>
+                    <path d="M112.077 43.184V31.952H94.9408V108.848H112.941V71.552C112.941 55.856 121.581 47.792 135.261 47.792C136.557 47.792 137.853 47.936 139.437 48.224V31.088C126.621 31.088 117.261 35.12 112.077 43.184Z" stroke="black" stroke-width="4"/>
+                    <path d="M211.315 2V41.456C205.267 34.4 196.483 31.088 186.547 31.088C164.227 31.088 147.667 46.496 147.667 70.4C147.667 94.304 164.227 109.856 186.547 109.856C197.059 109.856 205.987 106.256 212.035 98.912V108.848H229.315V2H211.315ZM188.707 94.448C175.747 94.448 165.811 85.088 165.811 70.4C165.811 55.712 175.747 46.352 188.707 46.352C201.667 46.352 211.603 55.712 211.603 70.4C211.603 85.088 201.667 94.448 188.707 94.448Z" stroke="black" stroke-width="4"/>
+                    <path d="M269.423 94.448L311.759 43.328V31.952H247.391V46.352H288.719L246.527 97.472V108.848H312.911V94.448H269.423Z" stroke="black" stroke-width="4"/>
+                    <path d="M363.658 109.856C378.634 109.856 390.586 103.376 396.49 91.856L382.666 83.792C378.058 91.136 371.146 94.448 363.514 94.448C350.266 94.448 340.186 85.376 340.186 70.4C340.186 55.568 350.266 46.352 363.514 46.352C371.146 46.352 378.058 49.664 382.666 57.008L396.49 48.944C390.586 37.28 378.634 31.088 363.658 31.088C339.322 31.088 322.042 47.36 322.042 70.4C322.042 93.44 339.322 109.856 363.658 109.856Z" stroke="black" stroke-width="4"/>
+                    <path d="M445.485 109.856C469.389 109.856 486.525 93.44 486.525 70.4C486.525 47.36 469.389 31.088 445.485 31.088C421.869 31.088 404.589 47.36 404.589 70.4C404.589 93.44 421.869 109.856 445.485 109.856ZM445.485 94.448C432.525 94.448 422.733 85.088 422.733 70.4C422.733 55.712 432.525 46.352 445.485 46.352C458.589 46.352 468.381 55.712 468.381 70.4C468.381 85.088 458.589 94.448 445.485 94.448Z" stroke="black" stroke-width="4"/>
+                    <path d="M561.05 2V41.456C555.002 34.4 546.218 31.088 536.282 31.088C513.962 31.088 497.402 46.496 497.402 70.4C497.402 94.304 513.962 109.856 536.282 109.856C546.794 109.856 555.722 106.256 561.77 98.912V108.848H579.05V2H561.05ZM538.442 94.448C525.482 94.448 515.546 85.088 515.546 70.4C515.546 55.712 525.482 46.352 538.442 46.352C551.402 46.352 561.338 55.712 561.338 70.4C561.338 85.088 551.402 94.448 538.442 94.448Z" stroke="black" stroke-width="4"/>
+                    <path d="M674.885 70.832C674.885 46.784 658.469 31.088 636.005 31.088C613.109 31.088 596.261 47.504 596.261 70.4C596.261 93.296 612.965 109.856 638.741 109.856C651.989 109.856 662.789 105.536 669.701 97.328L660.053 86.24C654.581 91.856 647.813 94.592 639.173 94.592C625.781 94.592 616.421 87.392 614.261 76.16H674.597C674.741 74.432 674.885 72.272 674.885 70.832ZM636.005 45.488C647.813 45.488 656.309 53.12 657.749 64.208H614.117C615.845 52.976 624.341 45.488 636.005 45.488Z" stroke="black" stroke-width="4"/>
+                    <path d="M708.032 94.448L750.368 43.328V31.952H686V46.352H727.328L685.136 97.472V108.848H751.52V94.448H708.032Z" stroke="black" stroke-width="4"/>
+                </svg>   
+                    
+            </div>
+        </div>
 
-        <section class="work_title_text">
-            <h2>My Work</h2>
-            <h4>Welcome! Here you can view all my projects from personal to more professional work. If you want to know even more about me or my projects feel free to contact me through my email:</h4>
-            <h3><a href="mailto: angel01rdz@outlook.com" target="_blank">angel01rdz@outlook.com</a></h3>
+
+        <section class="my_work">
+            <div class="my_work__header flex flex__ai-c flex__jc-c">
+                <h2>My Work</h2>
+                <p>Welcome! Here you can view all my projects from personal to more professional work. If you want to know even more about me or my projects feel free to contact me through my email:</p>
+                <h3><a href="mailto: angel01rdz@outlook.com" target="_blank">angel01rdz@outlook.com</a></h3>
+                <p class="work_process">Each of the following images redirects you to the live preview of the project and the Github repository to view my code.</p>
+            </div>
+            <div class="my_work__projects">
+                <div class="project_container">
+                    <a href="#"><img src="img/todo_app.jpg" alt="Phone Mockup CSS"></a>
+                    <h3 class="img_tag"><a href="#">To-do App</a></h3>
+                </div>
+                <div class="project_container">
+                    <a href="bookmark_landing.html"><img src="img/bookmark_landing.jpg" alt="Phone Mockup CSS"></a>
+                    <h3 class="img_tag"><a href="#">Bookmark Landing Page</a></h3>
+                </div>
+                <div class="project_container">
+                    <a href="#"><img src="img/desktop-design.jpg" alt="Phone Mockup CSS"></a>
+                    <h3 class="img_tag"><a href="#">CSS Chat Mockup</a></h3>
+                </div>
+            </div>
         </section>
-
-        <!--///////////////////////////////// CONTACT SECTION /////////////////////////////////-->
-
         <section class="contact" id="contact">
             <h2>Contact Me</h2>
             <p>If you liked what you see here, send me an email and let’s work together in your next project!</p>
