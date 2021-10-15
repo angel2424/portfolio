@@ -171,9 +171,19 @@ let stFooter = gsap.timeline({
     }
 });
 
-stFooter.from('.to_top, footer', {opacity: 0, duration: 1})
+stFooter.from('.to_top, footer', {opacity: 0, duration: 1});
 
         //// WORK PAGE ////
 
 /////////   nav section animations
 
+tl.from('#work_header', {y: '50%', opacity: 0, duration: 1, stagger: 0.25}, '-=2');
+
+let stProjects = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.my_work__projects',
+        start: 'top center'
+    }
+});
+
+stProjects.from('.project_container', {x: '-100%', opacity: 0, duration: 1, stagger: 0.25}, '-=1')
