@@ -345,6 +345,12 @@ nav {
   transition: ease .2s;
 }
 
+@media (max-width: 1099px) {
+  nav {
+    padding: 55px 85px;
+  }
+}
+
 @media (max-width: 450px) {
   nav {
     padding: 45px 25px;
@@ -477,6 +483,7 @@ nav .hamburger_menu span:not(last-child) {
 
 @media (max-width: 1099px) {
   .hero {
+    padding-top: 0px;
     padding-left: 50px;
     padding-right: 50px;
     -webkit-box-pack: center;
@@ -521,6 +528,12 @@ nav .hamburger_menu span:not(last-child) {
   font-weight: 800;
 }
 
+@media (max-width: 450px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
+
 .hero h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -529,7 +542,7 @@ nav .hamburger_menu span:not(last-child) {
 @media (max-width: 450px) {
   .hero h2 {
     font-size: 1.375rem;
-    margin: 15px 0 15px 0;
+    margin: 10px 0;
   }
 }
 
@@ -566,7 +579,7 @@ nav .hamburger_menu span:not(last-child) {
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 3;
+  z-index: 99;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }

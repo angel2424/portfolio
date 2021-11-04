@@ -10,6 +10,7 @@
     align-items: center;
 
     @include tablet {
+        padding-top: 0px;
         padding-left: 50px;
         padding-right: 50px;
         justify-content: center;
@@ -45,7 +46,7 @@
         font-weight: 800;
 
         @include mobile {
-            font-size: font-mobile(MainHeaders);
+            font-size: font-mobile(headers);
         }
     }
 
@@ -55,7 +56,7 @@
 
         @include mobile {
             font-size: font-mobile(subtitles);
-            margin: 15px 0 15px 0;
+            margin: 10px 0;
         }
     }
 

@@ -75,12 +75,13 @@ nav {
     transition: ease .2s;
     // This reduces padding on smaller screens to take advantage of all the limited space
 
+    
+    @include tablet {
+        padding: 55px 85px;
+    }
+    
     @include mobile {
         padding: 45px 25px;
-    }
-
-    @include tablet {
-        
     }
     
     @include shortDesktop {
